@@ -60,3 +60,139 @@ selector .elementor-heading-title::before{
     }
 }
   </style>
+  
+<!-- =======================  Elementor Skewed Card Effect | WordPress Elementor Pro Tutorial | Elementor Tips & Tricks========================== -->
+  <--paste this code in inside column-->
+  <!--   video explanation https://www.youtube.com/watch?v=eFZTgFriH2I&list=PLTDZrIwt-NI2_Wl8wlzHOHgzuxu8P81fB&index=3-->
+<!--     Skewed Effect CSS   -->
+    <style>
+     :root{
+    --grad1: #00ccff;
+    --grad2: #0e1538;
+    --grad3: #d400d4;
+}
+selector{
+    position: relative;
+    z-index: 999;
+}
+/*SKEWED EFFECT*/
+selector::before, selector::after{
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    -webkit-transform: skewX(2deg) skewY(4deg);
+            transform: skewX(2deg) skewY(4deg);
+    background: -webkit-linear-gradient(135deg, var(--grad1), var(--grad2), var(--grad3));
+    background: linear-gradient(315deg, var(--grad1), var(--grad2), var(--grad3));
+    z-index: -9;
+}
+      
+      /*BLUR EFFECT*/
+selector::after{
+    -webkit-filter: blur(50px);
+            filter: blur(50px);
+}
+     
+      /*HOVER EFFECT*/
+selector:hover::before, selector:hover::after{
+     background: -webkit-linear-gradient(315deg, var(--grad1), var(--grad2), var(--grad3));
+     background: linear-gradient(135deg, var(--grad1), var(--grad2), var(--grad3));
+}
+    </style>
+    
+<!-- ==================Amazing Elementor ZOOM IN Profile Card Effect | WordPress Elementor Pro Tutorial | Elementor Tricks==================     -->
+    <--paste this code in column-->
+  <!--   video explanation https://www.youtube.com/watch?v=LW8U5SFat4c&list=PLTDZrIwt-NI2_Wl8wlzHOHgzuxu8P81fB&index=4-->
+      <style>
+       *Overlay Background Zoom-In CSS*/
+selector{
+    overflow: hidden !important;
+}
+selector .elementor-background-overlay{
+    -webkit-transition: all 0.5s !important;
+    transition: all 0.5s !important;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+}
+selector:hover .elementor-background-overlay{
+    -webkit-transform: scale(2);
+            transform: scale(2);
+}
+/*Column Element Show/Hide CSS*/
+selector .elementor-column{
+    opacity: 0;
+    -webkit-transition: all 0.75s !important;
+    transition: all 0.75s !important;
+}
+selector:hover .elementor-column{
+    opacity: 1;
+} 
+        
+        
+      </style>
+    
+<!-- ======================= Elementor Hexagon Card Effect | WordPress Elementor Pro Tutorial | Elementor Tips and Tricks ============   -->
+     <--paste this code in column custom css-->
+  <!--   video explanation https://www.youtube.com/watch?v=tP5QKymrf18&list=PLTDZrIwt-NI2_Wl8wlzHOHgzuxu8P81fB&index=6-->
+  <style>   
+   
+    /*Hexagon Clip-Path*/
+selector{
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 99% 75%, 50% 100%, 0 75%);
+    -webkit-transition: all 0.5s !important;
+    transition: all 0.5s !important;
+}
+    /*Gradient Overlay Show/Hide CSS*/
+selector .elementor-background-overlay{
+    -webkit-transition: all 0.5s !important;
+    transition: all 0.5s !important;
+    opacity: 0 !important;
+}
+selector:hover .elementor-background-overlay{
+    opacity: 0.85 !important;
+}
+/*Column Element Show/Hide CSS*/
+selector .elementor-column{
+    opacity: 0;
+    -webkit-transition: all 0.8s !important;
+    transition: all 0.8s !important;
+}
+selector:hover .elementor-column{
+    opacity: 1;
+}
+/*Shadow transition Effect CSS*/
+selector:hover{
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+}
+.hexa-mom::before{
+    content: '';
+    position: absolute;
+    bottom: -70px !important;
+    width: 100%;
+    color: #fff;
+    height: 60px;
+    border-radius: 50%;
+    background: -webkit-radial-gradient(rgba(0,0,0,0.15),transparent, transparent);
+    background: radial-gradient(rgba(0,0,0,0.15),transparent, transparent);
+    display: block;
+    -webkit-transition: all 0.8s !important;
+    transition: all 0.8s !important;
+    z-index: 999;
+}
+.hexa-mom:hover::before{
+    opacity: 1 !important;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+}    
+</style>
+      
+      
+<!--   =======================     Elementor Landing Page Website Design | WordPress Elementor Pro Tutorial===========================-->
+<!--        video  https://www.youtube.com/watch?v=WMEJ2VcPGSs&list=PLTDZrIwt-NI2_Wl8wlzHOHgzuxu8P81fB&index=8 -->
+<!--    css    https://jimfahaddigital.com/tutorial/pepsi-landing-page-using-elementor-elementor-pro-tutorial/ -->
+      
+    
