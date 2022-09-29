@@ -1,5 +1,6 @@
 <!-- ==========================Elementor Sticky Image when Text Scrolls 🔥 WordPress Elementor Pro Tricks================================= -->
 <!-- paste this code in image custom css -->
+<!-- video explanation  https://www.youtube.com/watch?v=MNU-Rux1xy8&list=PLTDZrIwt-NI2_Wl8wlzHOHgzuxu8P81fB&index=1  -->
 <style>
   selector{
     position: sticky;
@@ -7,3 +8,55 @@
     top: 0
 }
 </style>
+
+
+<!-- ==================== Elementor Text Stroke Slide Animation | WordPress Elementor Pro Tutorial | Elementor Tips & Tricks =================-->
+<--paste this code in heading custom css-->
+<!--   video explanation https://www.youtube.com/watch?v=Muouj7r9B7w&list=PLTDZrIwt-NI2_Wl8wlzHOHgzuxu8P81fB&index=2 -->
+  <style>
+    :root{
+    --myText : 'JIM FAHAD DIGITAL';
+    --textColor: #2CFF99;
+    --textStroke: 2px;
+    --anDuration: 6s;
+}
+selector{
+    -webkit-text-stroke: var(--textStroke) var(--textColor);
+    display: table;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto
+}
+selector .elementor-heading-title::before{
+    content: var(--myText);
+    color: var(--textColor);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: var(--textStroke) solid var(--textColor);
+    -webkit-animation:animateX var(--anDuration) linear infinite;
+            animation:animateX var(--anDuration) linear infinite;
+}
+@-webkit-keyframes animateX{
+   0%,10%,100%{
+        width:0%;
+    }
+   70%, 90%{
+        width: 100%;
+    }
+}
+@keyframes animateX{
+   0%,10%,100%{
+        width:0%;
+    }
+   70%, 90%{
+        width: 100%;
+    }
+}
+  </style>
